@@ -2,15 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="robots" content="">
-<link rel="stylesheet" href="css/style.min.css?_v=20220504215706">
-<title>CRM BAZA</title>
+  @@include("html/head.html", {
+  "title": "CRM BAZA"
+  })
 </head>
 
 <body class="home webp">
@@ -21,47 +15,13 @@
           <span></span>
         </div>
       </button>
-      <ul class="socials">
-  <li class="socials__item"><a href="#" class="socials__link">
-      <svg>
-        <use fill="none" xlink:href="img/socials-icons.svg#fb"></use>
-      </svg>
-    </a>
-  </li>
-  <li class="socials__item"><a href="#" class="socials__link">
-      <svg>
-        <use fill="none" xlink:href="img/socials-icons.svg#insta"></use>
-      </svg>
-    </a>
-  </li>
-  <li class="socials__item"><a href="#" class="socials__link">
-      <svg>
-        <use fill="none" xlink:href="img/socials-icons.svg#tg"></use>
-      </svg>
-    </a>
-  </li>
-</ul>
+      @@include("html/components/socials.html")
       <div class="copyright">
         © 2022 BAZA Все права не защищены
       </div>
     </aside>
     <main class="main">
-      <header class="header">
-  <a href="#" class="logo">
-    <img src="img/logo.svg" alt="BAZA LOGO">
-  </a>
-  <div class="header__col">
-    <div class="language">
-      <select>
-        <option value="En">En</option>
-        <option value="Ru">Ru</option>
-      </select>
-    </div>
-    <a href="" class="header__user">
-      <img src="img/home/user.svg" alt="Иконка пользователяы">
-    </a>
-  </div>
-</header>
+      @@include("html/header.html")
       <div class="slider">
         <div class="slider__wrapper">
           <div class="slider__track">
@@ -75,7 +35,7 @@
                     Лучшее мобильное приложение по версии премии «Цифровые Вершины» 2018</div>
                   <a href="#" class="btn intro__btn">Попробовать бесплатно</a>
                 </div>
-                <picture><source srcset="img/home/01.webp" type="image/webp"><img src="img/home/01.png" alt="" class="intro__img"></picture>
+                <img src="img/home/01.png" alt="" class="intro__img">
               </div>
               <div class="news">
                 <h2 class="news__title">Новости</h2>
@@ -141,7 +101,7 @@
                     Лучшее мобильное приложение по версии премии «Цифровые Вершины» 2018</div>
                   <a href="#" class="btn intro__btn">Попробовать бесплатно</a>
                 </div>
-                <picture><source srcset="img/home/01.webp" type="image/webp"><img src="img/home/01.png" alt="" class="intro__img"></picture>
+                <img src="img/home/01.png" alt="" class="intro__img">
               </div>
               <div class="news">
                 <h2 class="news__title">Новости</h2>
@@ -207,7 +167,7 @@
                     Лучшее мобильное приложение по версии премии «Цифровые Вершины» 2018</div>
                   <a href="#" class="btn intro__btn">Попробовать бесплатно</a>
                 </div>
-                <picture><source srcset="img/home/01.webp" type="image/webp"><img src="img/home/01.png" alt="" class="intro__img"></picture>
+                <img src="img/home/01.png" alt="" class="intro__img">
               </div>
               <div class="news">
                 <h2 class="news__title">Новости</h2>
@@ -273,7 +233,7 @@
                     Лучшее мобильное приложение по версии премии «Цифровые Вершины» 2018</div>
                   <a href="#" class="btn intro__btn">Попробовать бесплатно</a>
                 </div>
-                <picture><source srcset="img/home/01.webp" type="image/webp"><img src="img/home/01.png" alt="" class="intro__img"></picture>
+                <img src="img/home/01.png" alt="" class="intro__img">
               </div>
               <div class="news">
                 <h2 class="news__title">Новости</h2>
@@ -339,7 +299,7 @@
                     Лучшее мобильное приложение по версии премии «Цифровые Вершины» 2018</div>
                   <a href="#" class="btn intro__btn">Попробовать бесплатно</a>
                 </div>
-                <picture><source srcset="img/home/01.webp" type="image/webp"><img src="img/home/01.png" alt="" class="intro__img"></picture>
+                <img src="img/home/01.png" alt="" class="intro__img">
               </div>
               <div class="news">
                 <h2 class="news__title">Новости</h2>
@@ -399,11 +359,6 @@
         </div>
         <div class="slider__nav">
           <div class="slider__pagination">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
           </div>
           <div class="slider__btns">
             <div class="slider__btn slider__btn--next">
@@ -423,8 +378,7 @@
       </div>
     </main>
   </div>
-  <script src="js/libs.js?_v=20220504215706"></script>
-  <script src="js/main.js?_v=20220504215706"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
