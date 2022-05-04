@@ -459,7 +459,23 @@ body .locked {
 }
 
 .slider__wrapper {
-  margin-right: 16px;
+  max-width: 1622px;
+  margin-right: 42px;
+  overflow: hidden;
+}
+
+.slider__slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.slider__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .slider__nav {
